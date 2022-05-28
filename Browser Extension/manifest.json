@@ -1,0 +1,25 @@
+{
+    "name": "Companies Notifier",
+    "version": "1.0",
+    "description": "notifies about the upcoming companies",
+    "manifest_version": 2,
+    "author": "Tech Phantoms",
+    "browser_action":{
+        "default_popup": "index.html",
+        "default_title": "Companies Notifier"
+    },
+    "permissions": [
+        "notifications",
+        "tabs"
+    ],
+    "background":
+    {
+        "scripts": ["bgscript.js"]
+    },
+    "content_scripts": [
+        {
+        "matches": ["http://*.website.net/*"],
+        "js": ["bootstrap.bundle.min.js","jquery-3.6.0.min.js","script.js","d3.v5.min.js","sweetalert2.all.min.js"]
+        }
+    ]
+}
