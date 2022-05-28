@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Basic Computer Science Quiz</title>
+  </head>
+  <body class="flex">
+    <div class="wrapper">
+      <div class="test_container">
+        <button type="button" class="answer"><a href="/history">Quiz History</a></button>
+        <div class="test_head">
+          <h1 class="test_title">Skill Assessment</h1>
+          <div class="test_score flex">
+            <span id="correct_score"></span>
+            /<span id="total_question"></span>
+          </div>
+        </div>
+
+        <div class="test_body">
+          <h2 class="test_question" id="question">
+            <!--What is the full form of HTTP? <br> <span class="category">Computer Science</span>-->
+          </h2>
+          <ul class="test_options">
+            <!-- <li>1. Hyper Text Transfer Protocol</li>
+            <li>1. Hyper Text Transfer Protocol</li>
+            <li>1. Hyper Text Transfer Protocol</li>
+            <li>1. Hyper Text Transfer Protocol</li> -->
+          </ul>
+          <div id="result">
+            <!--result here-->
+          </div>
+        </div>
+
+        <div class="test_foot">
+          <form action="/save_to_file" method="post" style="display:none;">
+            <input type="text" name="score_obtained" id="score_obtained">
+            <button type="submit" id="score_btn">Post Score</button>
+          </form>
+          <button type="button" id="check_answer">Check Answer</button>
+          <button type="button" id="try_again">Try Again</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../static/js/script.js"></script>
+  </body>
+</html>
